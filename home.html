@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/home.css">
+        <link rel="stylesheet" type="text/css" href="css/video.css">
+        <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@500&family=Open+Sans:wght@300;700&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;900&display=swap"/>
+        <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@600;900&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" type="text/css" href="css/cardhover.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/venue2.css">
+        <link rel="stylesheet" type="text/css" href="css/neon.css">
+        <link rel="stylesheet" type="text/css" href="css/topbar.css">
+    </head>
+<body>
+<div  class="mainbody">
+<nav class="topbar">
+  <div class="menu-icon">
+    <i class=" fa fa-bars fa-2x"></i>
+  </div>
+  <div class="menu">
+    <ul class="menulist">
+        <a class="logotop"><img src="Images/logo.png" alt="image"></a>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#section-2">Our Story</a></li>
+    <li><a href="#section-3">Prenup</a></li>
+    <li><a href="#section-4">Venue</a></li>
+    <li><a href="#section-5">Invitation</a></li>
+    <li><a href="#section-6">RSVP</a></li>
+    </ul>
+  </div>
+</nav>
+<header>
+    <section id="home" class="content-section">
+        <div class="mainTitle">
+            <h1>Jhoennyne x Renson</h1>
+        </div>
+        <div class="section1">
+            <p class="xinitials">R x J 
+            <p>12.14.2022 
+            <p class="neon"></p>
+        </div>
+    </section>
+</header>
+<nav class="home">
+  <ul>
+      <a class="logo"><img src="Images/logo.png" alt="image"></a>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#section-2">Our Story</a></li>
+    <li><a href="#section-3">Prenup</a></li>
+    <li><a href="#section-4">Venue</a></li>
+    <li><a href="#section-5">Invitation</a></li>
+    <li><a href="#section-6">RSVP</a></li>
+  </ul>
+</nav>
+
+<main>
+  <section id="section-2" class="content-section">
+    <h1 class="section-header">Our Story</h1>
+    <p>Ratione nulla nam, ipsa dignissimos corrupti veniam nostrum, laudantium asperiores sequi numquam placeat velit voluptate in praesentium non labore unde incidunt laborum maxime quae magni.</p>
+     <!--Cardhover start-->
+    <div class="cardhover">
+        <main class="page-content">
+            <div class="card">
+                <div class="cardholder">
+                    <h2 class="title">Beginning</h2>
+                    <p class="copy">Check out all of these gorgeous mountain trips with beautiful views of, you guessed it, the mountains</p><a href="beginning.html"><button class="btn">See more</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="cardholder">
+                    <h2 class="title">Journey</h2>
+                    <p class="copy">Plan your next beach trip with these fabulous destinations</p><button class="btn">See more</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="cardholder">
+                    <h2 class="title">Proposal</h2>
+                    <p class="copy">It's the desert you've always dreamed of</p><button class="btn">See more</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="cardholder">
+                    <h2 class="title">Wedding</h2>
+                    <p class="copy">Seriously, straight up, just blast off into outer space today</p><button class="btn">See more</button>
+                </div>
+            </div>
+            <script>
+                let input = document.getElementById("input");
+                let error = document.getElementById("error");
+                function annoy(inputtxt) {
+                    var letters = /^[A-Za-z]+$/;
+                    if (inputtxt.value.match(letters)) {
+                        inputtxt.value = "";
+                        error.innerHTML = "Please insert numbers only";
+                    } else {
+                        inputtxt.value = "";
+                        error.innerHTML = "Please insert characters only";
+                    }
+                    var numbers = /^[0-9]+$/;
+                    if (inputtxt.value.match(numbers)) {
+                        inputtxt.value = "";
+                        error.innerHTML = "Please insert characters only";
+                    }
+                }
+            </script>
+        </main>
+    </div>
+    <!--Cardhover end-->
+  </section>
+  <section id="section-3" class="content-section">
+    <h1 class="section-header">Save the Date</h1>
+    <p>Soluta quibusdam ad nostrum vel voluptate delectus sequi dolores quia quaerat officia corrupti, aperiam fugit facere debitis repudiandae praesentium sapiente inventore repellendus, nemo commodi alias!</p>
+    <div class="responsive-video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/HO0Qmk1aa44" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </section>
+  <section id="section-4" class="content-section">
+    <h1 class="section-header">Venue</h1>
+    <p>Aliquid aliquam magnam ducimus similique obcaecati, unde exercitationem laborum incidunt, quas in ipsum inventore nostrum? Blanditiis optio cumque earum iste odio! Alias sint accusamus repudiandae.</p>
+    <main class="main">
+        <div class="container">
+            <div class="item">
+              <a>
+                <img src="Images/stonino2.jpeg" alt="image">
+                  <a href="https://www.google.com/maps/place/New+Sto.+Nino+Parish/@14.6722135,121.135025,15z/data=!4m5!3m4!1s0x0:0xa73cf51be5164c84!8m2!3d14.672353!4d121.1350096" target="_blank"><h3>New Sto. Nino Parish</h3></a>
+                <div class="details">
+                    <a href="https://www.google.com/maps/place/New+Sto.+Nino+Parish/@14.6722135,121.135025,15z/data=!4m5!3m4!1s0x0:0xa73cf51be5164c84!8m2!3d14.672353!4d121.1350096" target="_blank"><button class="btn"><i class="fas fa-map-marker-alt"></i>   Map</button></a>
+                </div>
+              </a>
+            </div>
+            <div class="item">
+              <a>
+                <img src="Images/amphitheater.jpg" alt="image">
+                  <a href="https://www.google.com/maps/place/Estancia+de+Lorenzo/@14.6784783,121.1329965,15z/data=!4m2!3m1!1s0x0:0xebfa5035530f8506?sa=X&ved=2ahUKEwj25bSRwbT0AhUBRuUKHQW6AOEQ_BJ6BAhDEAU" target="_blank"><h3>Estancia de Lorenzo - Amphitheater</h3></a>
+                <div class="details">
+                    <a href="https://www.google.com/maps/place/Estancia+de+Lorenzo/@14.6784783,121.1329965,15z/data=!4m2!3m1!1s0x0:0xebfa5035530f8506?sa=X&ved=2ahUKEwj25bSRwbT0AhUBRuUKHQW6AOEQ_BJ6BAhDEAU" target="_blank"><button class="btn"><i class="fas fa-map-marker-alt"></i>   Map</button></a>
+                </div>
+              </a>
+            </div>
+            <div class="item">
+              <a>
+                <img src="Images/hotel.jpeg" alt="image">
+                  <a href="https://www.google.com/maps/place/Estancia+de+Lorenzo/@14.6784783,121.1329965,15z/data=!4m2!3m1!1s0x0:0xebfa5035530f8506?sa=X&ved=2ahUKEwj25bSRwbT0AhUBRuUKHQW6AOEQ_BJ6BAhDEAU" target="_blank"><h3>Estancia de Lorenzo - Prima Villa</h3></a>
+                <div class="details">
+                    <a href="https://www.google.com/maps/place/Estancia+de+Lorenzo/@14.6784783,121.1329965,15z/data=!4m2!3m1!1s0x0:0xebfa5035530f8506?sa=X&ved=2ahUKEwj25bSRwbT0AhUBRuUKHQW6AOEQ_BJ6BAhDEAU" target="_blank"><button class="btn"><i class="fas fa-map-marker-alt"></i>   Map</button></a>
+                </div>
+              </a>
+            </div>
+        </div>
+    </main>
+  </section>
+  <section id="section-5" class="content-section">
+    <h1 class="section-header">You're Invited!</h1>
+    <p>Officia ipsum fugit iure eaque quisquam error tempore earum enim illum, delectus officiis incidunt corrupti aliquid nam quas perspiciatis eveniet doloremque quod labore? Doloremque, ipsum?</p>
+      <div class="section5">
+           <img src="Images/invite.jpeg" alt="image">
+      </div>
+  </section>
+  <section id="section-6" class="content-section lastSection">
+    <h1  class="section-header">Celebrate with Us</h1>
+    <p>Aperiam repellat dignissimos fugiat possimus esse, suscipit neque nisi libero alias obcaecati ipsam, porro illo corrupti nostrum reprehenderit unde, illum in laudantium impedit. Modi, veniam.</p>
+  </section>
+</main>
+</div>
+<div class="footer">
+    <p>MADE WITH</p>
+    <div class="heart"></div>
+</div>
+<script>
+$(document).ready(function(){
+	var contentSection = $('.content-section');
+	var navigation = $('nav');
+	
+	//when a nav link is clicked, smooth scroll to the section
+	navigation.on('click', 'a', function(event){
+		event.preventDefault(); //prevents previous event
+		smoothScroll($(this.hash));
+
+	});
+	
+	//update navigation on scroll...
+	$(window).on('scroll', function(){
+		updateNavigation();
+	})
+	//...and when the page starts
+	updateNavigation();
+	
+	/////FUNCTIONS
+	function updateNavigation(){
+		contentSection.each(function(){
+			var sectionName = $(this).attr('id');
+			var navigationMatch = $('nav a[href="#' + sectionName + '"]');
+			if( ($(this).offset().top - $(window).height()/3 < $(window).scrollTop()) &&
+				  ($(this).offset().top + $(this).height() - $(window).height()/3 > $(window).scrollTop()))
+				{
+					navigationMatch.addClass('current');
+				}
+			else {
+				navigationMatch.removeClass('current');
+			}
+		});
+	}
+	function smoothScroll(target){
+		$('body,html').animate({
+			scrollTop: target.offset().top - 75
+		}, 800);
+	}
+});
+</script>
+
+<!--For Sticky topbar-->
+<script type="text/javascript">
+    //Menu toggle-effect
+    $(document).ready(function(){
+      $(".menu-icon").on("click",function(){
+        $(".menulist").toggleClass("showing");
+      });
+    });
+
+    //Scrolling Effect
+    $(window).on('scroll', function(){
+      if($(window).scrollTop()) {
+        $('nav').addClass('black');
+      }
+      else{
+        $('nav').removeClass('black')
+      }
+    })
+</script>
+<!--End of For Sticky topbar-->
+</body>
