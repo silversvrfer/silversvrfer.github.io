@@ -1,0 +1,211 @@
+html {
+  scroll-behavior: smooth;
+        background-color: #E9E8E2;
+    background-image:url(../Images/pattern4.jpg);
+}
+.mainbody {
+    margin: auto;
+    max-width: 1080px;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    font-family: 'Open Sans', sans-serif;
+     
+  /* this breaks position sticky in Firefox */
+  /* overflow-x: hidden; */
+}
+header {
+    grid-column: 2 / 3;;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+    letter-spacing: 3px;
+    text-align: center;
+}
+@media (max-width: 1100px) {
+    body {
+        margin: 0 30px;
+        max-width: 100%;
+    }
+    header {
+        margin: 50px 0 0 0;
+    }
+}
+nav.home {
+  white-space: nowrap; 
+}
+.home ul {
+  list-style: none;
+}
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+/* Only stick if you can fit */
+ .home ul {
+        position: sticky;
+        top: 66%;
+        transform: translate(-50%, -100%);
+        left: 10%;
+        display: block;
+  }
+@media (min-width: 1101px) {
+    nav.topbar {
+        display: none;
+    }
+}
+
+@media (max-width: 1100px) {
+ .home ul {
+      display: none;
+  }
+    nav.home {
+        width: auto;
+    }
+}
+.home ul li a {
+    display: block;
+    padding: 0.5rem 0 0.5rem 0.5rem;
+    color: #ddd;
+    text-decoration: none;
+    text-transform: uppercase;
+    font: 900 12px/1.4 'Open Sans', arial, sans-serif;
+    width: fit-content;
+    max-width: 85px;
+    overflow: hidden;
+    opacity: 0.4;
+    transition: all 0.4s ease;
+}
+.home ul li a:after{
+    background: none repeat scroll 0 0 transparent;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    background:#fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+.home ul li a:hover:after{
+    width: 100%; 
+    left: 0; 
+    background: #fff;
+}
+.home ul li a.current:after {
+    width: 100%;
+    left: 0; 
+    font-size: 14px;
+    transition: 0.5s;
+    background:#FF1847;
+}
+.home ul li a.current{
+    opacity: 1;
+}
+section {
+    padding: 1rem;
+    margin: 1rem 0 0 0;
+    background-color: #E9E8E2;
+    border-radius: 5px;
+    box-shadow: 0 0 1px rgba(0,0,0,0.1), 0 1px 1px 0 rgba(0,0,0,0), 0 1px 1px 0 rgba(0,0,0,0.15);
+}
+section p {
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+.top {
+    padding: 0;
+    margin: 0;
+    background: none;
+}
+footer {
+  grid-column: 1 / 3;
+  background: #607D8B;
+  padding: 5rem 1rem;
+}
+.section-header {
+    margin: 0;
+    letter-spacing: 2px;
+    font-size: 1.6rem;
+    font-family: 'Encode Sans', sans-serif;
+    font-weight: 600;
+}
+.section1{
+    background-image:url(../Images/pic1a.jpg); 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    height: 533px;
+    background-position: top center;
+    color: #eee;
+    text-align: center;
+    
+}
+.section1 p{
+    position: relative;
+    top: 60%;
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    margin: 5px 0;
+}
+.mainTitle{
+    display: none;
+}
+.section1 .xinitials {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 5rem;
+    letter-spacing: -5px;
+}
+.section1 .hash {
+    font-size: 1rem;
+    letter-spacing: 3px;
+}
+.section1 .neon {
+    font-size: 1rem;
+    letter-spacing: 3px;
+}
+.section5{
+    background-repeat: no-repeat; 
+    height: 533px;
+    background-position:center;
+    color: #eee;
+    text-align: center;
+    
+}
+.section5 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.lastSection{
+    margin-bottom: 1rem;
+}
+.footer {
+  padding: 1rem;
+  text-align: center;
+    color: aliceblue;
+    font: 900 12px/1.4 'Open Sans', arial, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+.footer p {
+margin: 17px -10px;
+}
+.heart {
+  width: 50px;
+  height: 50px;
+  background:url(../Images/heart2.png);
+  background-position: 0 0;
+  cursor: pointer;
+  animation: fave-heart 1.5s steps(18);
+}
+.heart:hover {
+  background-position: -2800px 0;
+  transition: background 1.5s steps(28);
+}
+@keyframes fave-heart {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -2800px 0;
+  }
+}

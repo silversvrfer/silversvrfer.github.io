@@ -1,0 +1,95 @@
+.maingrid {
+	 display: grid;
+	 grid-template-columns: repeat(3, 1fr);
+	 grid-gap: 1rem;
+	 justify-content: center;
+	 align-items: center;
+}
+ .maingrid .phototile {
+	 color: #252a32;
+	 border-radius: 2px;
+	 background: #fff;
+	 box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
+}
+ .maingrid .tileimg {
+	 position: relative;
+	 display: block;
+	 width: 100%;
+	 padding-top: 70%;
+	 background: #fff;
+}
+ .maingrid .tileimg img {
+	 display: block;
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 width: 100%;
+	 height: 100%;
+	 object-fit: cover;
+}
+ @media only screen and (max-width: 600px) {
+	 .maingrid {
+		 display: grid;
+		 grid-template-columns: 1fr;
+		 grid-gap: 1rem;
+	}
+}
+
+/*nav design*/
+ .maingallery ul {
+        position: sticky;
+        top: 51.4%;
+        transform: translate(-50%, -100%);
+        left: 10%;
+        display: block;
+  }
+.maingallery ul {
+  list-style: none;
+}
+@media (max-width: 1100px) {
+ .maingallery ul {
+      display: none;
+  }
+    nav {
+        width: auto;
+    }
+}
+.maingallery ul li a {
+    display: block;
+    padding: 0.5rem 0 0.5rem 0.5rem;
+    color: #ddd;
+    text-decoration: none;
+    text-transform: uppercase;
+    font: 900 12px/1.4 'Open Sans', arial, sans-serif;
+    width: fit-content;
+    max-width: 85px;
+    overflow: hidden;
+    opacity: 0.4;
+    transition: all 0.4s ease;
+}
+.maingallery ul li a:after{
+    background: none repeat scroll 0 0 transparent;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    background:#fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+.maingallery ul li a:hover:after{
+    width: 100%; 
+    left: 0; 
+    background: #fff;
+}
+.maingallery ul li a.current:after {
+    width: 100%;
+    left: 0; 
+    font-size: 14px;
+    transition: 0.5s;
+    background:#FF1847;
+}
+.maingallery ul li a.current{
+    opacity: 1;
+}
+    
